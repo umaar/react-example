@@ -1,0 +1,27 @@
+{
+  "name": "react-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel js/main.js -d dist",
+    "server": "live-server --no-browser --watch=dist,css",
+    "watch": "./node_modules/.bin/watch 'npm run build' js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash.shuffle": "^4.2.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "watch": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1"
+  }
+}
